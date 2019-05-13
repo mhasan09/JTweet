@@ -1,9 +1,9 @@
-from django.contrib import admin
 from django.urls import path
-from .views import ListView, DetailView
+from . import views
+app_name='tweetapp'
 urlpatterns = [
 
-    path('', ListView.as_view(), name="list"),
-    path('1/', DetailView.as_view(), name="detail")
+    path('', views.TweetListView.as_view(),name="list"),
+
 
 ]

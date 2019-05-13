@@ -15,19 +15,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweetapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="100">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#1#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweetapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -40,24 +40,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweetapp/views.py">
+        <entry file="file://$PROJECT_DIR$/JTweet/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="368">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#630#662#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JTweet/urls.py">
+        <entry file="file://$PROJECT_DIR$/tweetapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#630#662#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,15 +76,15 @@
         <option value="$PROJECT_DIR$/tweetapp/models.py" />
         <option value="$PROJECT_DIR$/templates/detail_view.html" />
         <option value="$PROJECT_DIR$/templates/list_view.html" />
-        <option value="$PROJECT_DIR$/tweetapp/views.py" />
         <option value="$PROJECT_DIR$/JTweet/urls.py" />
+        <option value="$PROJECT_DIR$/tweetapp/views.py" />
         <option value="$PROJECT_DIR$/tweetapp/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="216" />
-    <option name="y" value="47" />
+    <option name="x" value="182" />
+    <option name="y" value="106" />
     <option name="width" value="1033" />
     <option name="height" value="517" />
   </component>
@@ -191,7 +191,7 @@
       <workItem from="1557648566148" duration="2963000" />
       <workItem from="1557676814284" duration="1035000" />
       <workItem from="1557681260184" duration="4648000" />
-      <workItem from="1557726764652" duration="2634000" />
+      <workItem from="1557726764652" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="added app">
       <created>1557591983711</created>
@@ -235,11 +235,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557688736038</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added class based views">
+      <created>1557730483791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557730483791</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12680000" />
+    <option name="totallyTimeSpent" value="14078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -278,7 +285,8 @@
     <MESSAGE value="added detail and list view" />
     <MESSAGE value="added querysets" />
     <MESSAGE value="added function_based_views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added function_based_views" />
+    <MESSAGE value="added class based views" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class based views" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JTweet/settings.py">
@@ -317,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -327,20 +335,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JTweet/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="368">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tweetapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -351,6 +349,16 @@
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweetapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

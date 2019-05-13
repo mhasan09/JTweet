@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(('tweet/'), include('tweetapp.urls')),
 
+
 ]
 
 if settings.DEBUG:
