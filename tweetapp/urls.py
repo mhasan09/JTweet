@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from .views import *
+from .views import ListView, DetailView
 urlpatterns = [
 
-    path('',tweet_list_view,name="list"),
-    path('detail',tweet_detail_view,name="detail")
+    path('', ListView.as_view(), name="list"),
+    path('1/', DetailView.as_view(), name="detail")
 
 ]
