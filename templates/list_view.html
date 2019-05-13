@@ -1,12 +1,7 @@
 {% for object in object_list %}
 
-    <p>
-        <li>
-            {{ object.content }}
-
-        </li>
-
-    </p>
-
+    {{ object.content }}
+    {{ object.timestamp }}
+    {{ object.timestamp|timesince }}<br>
 
 {% endfor %}
