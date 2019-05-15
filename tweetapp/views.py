@@ -4,6 +4,8 @@ from django.views.generic import ListView, DetailView, CreateView
 from .forms import TweetModelForm
 
 
+
+
 class TweetDetailView(DetailView):
    template_name = "detail_view.html"
    queryset = Tweet.objects.all()
@@ -12,9 +14,12 @@ class TweetCreateView(CreateView):
     form_class = TweetModelForm
     template_name = 'create_view.html'
     success_url = '/tweet/create/'
+
+
+
     def form_valid(self, form):
-        form.instance.user=self.request.user
-        return super(TweetCreateView,self).form_valid(form)
+        form.instance.user = self.request.user
+        return super(TweetCreateView, self).form_valid(form)
 
 
 
