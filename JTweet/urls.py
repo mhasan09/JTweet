@@ -24,6 +24,7 @@ urlpatterns = [
     path(('tweet/'), include('tweetapp.urls')),
 
 
+
 ]
 
 if settings.DEBUG:

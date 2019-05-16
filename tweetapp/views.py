@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from .models import Tweet
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import TweetModelForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 
 
 
@@ -33,6 +34,15 @@ class TweetUpdateView(UpdateView,LoginRequiredMixin):
         if obj.user != self.request.user:
             return 404
         return super(TweetUpdateView, self).dispatch(request, *args, **kwargs)
+
+class TweetDeleteView(DeleteView,LoginRequiredMixin):
+    model = Tweet
+    success_url = '/tweet/'
+    template_name = 'delete_confirm.html'
+
+
+
+
 
 
 class TweetListView(ListView):
