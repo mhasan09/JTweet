@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
-from django.core.exceptions import ValidationError
 from .validators import validate_content
+
 # Create your models here.
 class Tweet(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL , default=1,on_delete=models.DO_NOTHING)
@@ -12,3 +12,4 @@ class Tweet(models.Model):
 
     def __str__(self):
         return str(self.content)
+

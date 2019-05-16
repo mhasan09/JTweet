@@ -1,7 +1,15 @@
+{% include 'search_form.html' %}<br/>
 {% for object in object_list %}
 
     {{ object.content }}
     {{ object.timestamp }}
     {{ object.timestamp|timesince }}<br>
+
+{% empty %}
+    {% if request.GET.q %}
+         <p>No tweets found</p>
+    {% else %}
+
+    {% endif %}
 
 {% endfor %}
