@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from .validators import validate_content
+from django.urls import reverse
 
 # Create your models here.
 class Tweet(models.Model):
@@ -13,3 +14,5 @@ class Tweet(models.Model):
     def __str__(self):
         return str(self.content)
 
+    def get_absolute_url(self):
+        return reverse("tweetapp:detail" , kwargs={"pk":self.pk})

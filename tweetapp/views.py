@@ -12,12 +12,12 @@ from django.db.models import Q
 class TweetDetailView(DetailView):
    template_name = "detail_view.html"
    queryset = Tweet.objects.all()
+   success_url = reverse_lazy("tweetapp:list")
 
 class TweetCreateView(CreateView,LoginRequiredMixin):
     login_url = 'admin/'
     form_class = TweetModelForm
     template_name = 'create_view.html'
-    success_url = '/tweet/'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -40,10 +40,6 @@ class TweetDeleteView(DeleteView,LoginRequiredMixin):
     model = Tweet
     success_url = reverse_lazy("tweetapp:list")
     template_name = 'delete_confirm.html'
-
-
-
-
 
 
 class TweetListView(ListView):
