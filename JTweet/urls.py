@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-from tweetapp.views import TweetListView,home
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(('tweet/'), include('tweetapp.urls',namespace='Tweet')),
-    path('',TweetListView.as_view(),name="home")
+
 
 
 

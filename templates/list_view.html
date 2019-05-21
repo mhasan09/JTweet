@@ -1,24 +1,18 @@
-{% include 'search_form.html' %}<br/>
+{% include 'search_form.html' %}
 
-<div class="row">
-<div class="col-sm-8 text center" >
-
-<div class="media">
+  <h1>{{ request.user }}</h1>
 {% if object.image %}
+
   <img class="mr-3" src="..." alt="Generic placeholder image">
 {% endif %}
-    {% for object in object_list %}
-  <div class="media-body">
+
+{% for object in object_list %}
+
 
     <h3>
         {{ object.content }}
     </h3>
       {{ object.timestamp }} | {{ object.timestamp|timesince }} | <a href="{{ object.get_absolute_url }}">View</a>
-
-
-
-
-
 
 
 
@@ -30,7 +24,3 @@
     {% endif %}
 
 {% endfor %}
-</div>
-</div>
- </div>
-</div>

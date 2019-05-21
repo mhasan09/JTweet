@@ -1,14 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from .models import Tweet
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import TweetModelForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.db.models import Q
-
-
-def home(requests):
-    return render(requests,"home.html",{})
 
 class TweetDetailView(DetailView):
    template_name = "detail_view.html"
@@ -43,7 +39,7 @@ class TweetDeleteView(DeleteView,LoginRequiredMixin):
     template_name = 'delete_confirm.html'
 
 
-class TweetListView(ListView):
+class TweetListView(ListView,LoginRequiredMixin):
    template_name = "list_view.html"
    def get_context_data(self, *args, **kwargs):
        context = super(TweetListView,self).get_context_data(*args, **kwargs)
