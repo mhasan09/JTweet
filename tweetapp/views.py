@@ -7,7 +7,8 @@ from django.urls import reverse_lazy
 from django.db.models import Q
 
 
-
+def home(requests):
+    return render(requests,"home.html",{})
 
 class TweetDetailView(DetailView):
    template_name = "detail_view.html"
