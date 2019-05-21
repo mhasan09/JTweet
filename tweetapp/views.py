@@ -6,6 +6,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.db.models import Q
 
+def home(requests):
+    return render(requests,"list_view.html",{})
+
 class TweetDetailView(DetailView):
    template_name = "detail_view.html"
    queryset = Tweet.objects.all()
