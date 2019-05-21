@@ -19,11 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from tweetapp.views import TweetListView
 
-
+app_name = 'tweetapp'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tweet/', include('tweetapp.urls',namespace='tweet')),
-    path('api/tweet/', include('tweetapp.api.urls',namespace='tweet-api')),
+    path('tweet/', include('tweetapp.urls')),
+    path('api/tweet/', include('tweetapp.api.urls')),
     path('', TweetListView.as_view(), name='home')
 
 ]
