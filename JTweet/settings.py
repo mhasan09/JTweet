@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tweetapp',
     'rest_framework',
+    'accounts',
 ]
 
 LOGIN_URL = '/admin/'
