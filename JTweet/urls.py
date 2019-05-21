@@ -23,7 +23,7 @@ from tweetapp.views import TweetListView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tweet/', include('tweetapp.urls',namespace='tweet')),
-    path('',TweetListView.as_view(),name='home')
+    path('', TweetListView.as_view(), name='home')
 
 ]
 

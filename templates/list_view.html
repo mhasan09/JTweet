@@ -1,6 +1,16 @@
 {% include 'search_form.html' %}
 
   <h1>{{ request.user }}</h1>
+<div class="row">
+    {% if not request.GET.q %}
+
+
+            {% include 'create_view.html' with form=create_form action_url=create_url %}
+
+
+
+</div>
+{% endif %}
 {% if object.image %}
 
   <img class="mr-3" src="..." alt="Generic placeholder image">
